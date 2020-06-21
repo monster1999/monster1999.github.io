@@ -1,5 +1,9 @@
 /* global NexT, CONFIG, Velocity */
-
+////start////
+$('.site-author-image').click(function(){
+      window.location.href="https://monsterd.cn/";
+});
+////end//////
 if (window.$ && window.$.Velocity) window.Velocity = window.$.Velocity;
 
 NexT.motion = {};
