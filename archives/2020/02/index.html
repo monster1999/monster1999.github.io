@@ -21,7 +21,7 @@
   var CONFIG = {
     hostname: new URL('http://monsterd.cn').hostname,
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '7.7.1',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
@@ -53,7 +53,7 @@
 <meta property="og:site_name" content="Yuuki Mikoto">
 <meta property="og:description" content="美好稍纵即逝">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="monster1999">
+<meta property="article:author" content="Yuuki">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://monsterd.cn/archives/2020/02/">
@@ -313,9 +313,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="monster1999"
+    <img class="site-author-image" itemprop="image" alt="Yuuki"
       src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">monster1999</p>
+  <p class="site-author-name" itemprop="name">Yuuki</p>
   <div class="site-description" itemprop="description">美好稍纵即逝</div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -618,6 +618,22 @@ if(canvas.getContext){
 
 })();
 </script>
+
+
+
+<!--my custom code begin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+<script type="text/javascript">
+  $("#sidebar").hover(function(){
+    $("#mydivshow").velocity('stop').velocity({opacity: 1});
+  },function(){
+    $("#mydivshow").velocity('stop').velocity({opacity: 0});
+  });
+</script>
+<div id="mydivshow" class="mydivshow">
+<!--my custom code end-->
+
       </div>
 
     </div>
@@ -642,7 +658,7 @@ if(canvas.getContext){
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">monster1999</span>
+  <span class="author" itemprop="copyrightHolder">Yuuki</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
@@ -713,7 +729,7 @@ translateInitilization();
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
