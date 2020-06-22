@@ -1203,7 +1203,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fffceb;
+  background: #2540ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2587,7 +2587,6 @@ hr {
   display: inline-block;
 }
 body {
-  background: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -2606,7 +2605,6 @@ body {
   background: rgba(230,230,250,0.8) none repeat scroll !important;
 }
 .sidebar {
-  background: url("/images/asuna.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2614,7 +2612,7 @@ body {
 .sidebar p,
 .sidebar span,
 .sidebar a {
-  color: #e1ffff;
+  color: #fff;
 }
 .site-author-image {
   display: block;
