@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>菜鸡的功放世界新手web之waf</title>
-    <url>/archives/71e4b9fe.html</url>
-    <content><![CDATA[<!-- build time:Thu Sep 24 2020 22:59:07 GMT+0800 (GMT+08:00) --><p><a href="https://adworld.xctf.org.cn/task/answer?type=web&number=3&grade=0&id=5071&page=1" target="_blank" rel="noopener external nofollow noreferrer">题目地址</a></p><p>要点：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">关于管道符</span><br><span class="line"></span><br><span class="line">command1 &amp;&amp; command2 先执行command1后执行command2</span><br><span class="line">command1 | command2 只执行command2</span><br><span class="line">command1 &amp; command2 先执行command2后执行command1</span><br></pre></td></tr></table></figure><p>查找flag：<code>127.0.0.1 | find / name &#39;flag&#39;</code></p><p>输出结果如下</p><a id="more"></a> <img src="/archives/71e4b9fe/1.png"><p>control F 查找flag.txt</p><img src="/archives/71e4b9fe/2.png"><p>得到路径</p><p>打开flag：<code>127.0.0.1 | cat /home/flag.txt</code> 得到flag</p><img src="/archives/71e4b9fe/3.png"><!-- rebuild by neat -->]]></content>
+    <title>CTFer成长之路</title>
+    <url>/archives/8d2381a8.html</url>
+    <content><![CDATA[<!-- build time:Sun Nov 01 2020 16:32:10 GMT+0800 (GMT+08:00) --><h1 id="2019强网杯”随便注”学习"><a href="#2019强网杯”随便注”学习" class="headerlink" title="2019强网杯”随便注”学习"></a>2019强网杯”随便注”学习</h1><p><a href="https://buuoj.cn/challenges#[%E5%BC%BA%E7%BD%91%E6%9D%AF%202019]%E9%9A%8F%E4%BE%BF%E6%B3%A8" target="_blank" rel="noopener external nofollow noreferrer">题目地址</a></p><p>尝试数字型注入无果后，继续尝试字符型,如图。</p><a id="more"></a> <img src="/archives/8d2381a8/image-20201101162140757.png"><p>尝试基本姿势</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1&#39;#  正常且为True</span><br><span class="line">1&#39; and 1&#x3D;1#  正常且为True</span><br></pre></td></tr></table></figure><p>可以得知存在注入，并且参数使用单引号闭合。</p><p>尝试union查询</p><p><code>&#39;union select 1,group_concat(table_name) from information_schema.tables where table_schema=database()</code></p><img src="/archives/8d2381a8/image-20201101162717072.png"><p>得知过滤了select,学艺不精之后便没了思路。</p><p>参考了大佬的<a href="https://zhuanlan.zhihu.com/p/78989602" target="_blank" rel="noopener external nofollow noreferrer">文章</a>才把这题做出来。</p><!-- rebuild by neat -->]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>web</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hexo博客设置以及Next主题美化</title>
